@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Random Quotes</title>
+  <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/script.js"></script>
+</head>
+<body>
+  
+  <section >
+    <h1>
+      WEIGHT CONVERTER
+    </h1>
+    <div class="weight-container">
+      <input type="text" id="weight_value" placeholder="Input Weight" />
+    <select id="weight_unit">
+     <option value="lbs">KG to lbs</option>
+     <option value="kg">lbs to KG</option>
+    </select>
+    <button title="Convert" onclick="display_result()">Convert</button>
+    <div>
+      <p>result: <span id="result"></span></p>
+    </div>
+    </div>
+    
+  </section>
+
+  <section >
+    <h1>
+      NUMBERS!
+    </h1>
+    <div class="number-contianer">
+      <div>
+        <table>
+          <tr>
+            <td width="13%">Input Series of Number:</td>
+            <td width="29%"><input name="box1" type="text" id="box1" value="12,12,22,9,1,20" /></td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Max :</td>
+            <td><div id="max"> </div></td>
+          </tr>
+          <tr>
+            <td>Min :</td>
+            <td><div id="min"> </div></td>
+          </tr>
+          <tr>
+            <td>Sum  :</td>
+            <td><div id="sum"> </div></td>
+          </tr>
+          <tr>
+            <td>Average :</td>
+            <td><div id="avg"> </div></td>
+          </tr>
+          <tr>
+            <td>Reverse Order :</td>
+            <td><div id="reverse"> </div></td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td></td>
+          </tr>
+        </table>
+      </div>
+      <div>
+        <button onclick="calculate()">calculate</button>
+      </div>
+    </div>
+  </section>
+
+  
+
+  <section class="magic">
+    <h1>
+      NUMBERS!
+    </h1>
+    <div id="items">
+      <ul>
+        <ul>
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+          <li>Item 4</li>
+          <li>Item 5</li>
+          <li>Item 6</li>
+          <li>Item 7</li>
+        </ul>
+      </ul>
+    </div>
+    <div>
+      <button onclick="clearBox('items')">Clear it</button>
+      <button onclick="capitalize('items')">Capitalize</button>
+      <button onclick="SortList('items')">Sort</button>
+      <button onclick="Reverse('items')">Reverse</button>
+      <button onclick="clearBox('items')">Strip Blank</button>
+      <button onclick="clearBox('items')">Add number</button>
+      <button onclick="clearBox('items')">Suffle</button>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="container">
+    <div id="quote-box">
+      <p class="quote">You can do anything but not everything</p>
+      <p class="source">David Allen<span class="citation">Making It All Work</span><span class="year">2009</span><span class="category"></span></p>
+    </div>
+    <div>
+      <button id="loadQuote1" value="pink" onclick="changeBg('#ff2e63')">Show another quote</button>
+      <button id="loadQuote2" value="teal" onclick="changeBg ('#00adb5')">Show another quote</button>
+      <button id="loadQuote3" value="salmon" onclick="changeBg('#f38181')">Show another quote</button>
+      <button id="loadQuote4" value="purple" onclick="changeBg ('#6639a6')">Show another quote</button>
+    </div>
+    
+  </div>
+  
+</body>
+</html>

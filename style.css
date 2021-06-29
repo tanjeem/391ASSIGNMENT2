@@ -1,0 +1,191 @@
+
+* {
+  box-sizing: border-box;
+}
+body {
+    /*text-align: center;*/
+    background-color: cornflowerblue;
+    color: rgb(255, 255, 255);
+
+  }
+/*----------------------Headers------------------- */
+h1{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 2.5rem;
+  color:rgb(43, 43, 41);
+
+}
+/*-----------------------Weight Container------------------- */
+.weight-container{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.weight-container input, select, button,div{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 2rem;
+}
+/*----------------------Number Container------------*/
+.number-contianer{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: black;
+}
+.number-contianer input{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.5rem;
+  color: black;
+  font-weight: bold;
+}
+
+/*--------------------Magic Container----------------------*/
+
+.magic{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: black;
+  background: blanchedalmond;
+}
+#items{
+  width: 50%;
+  height: 50%;
+  border: dashed black;
+}
+
+/*--------------------Qoutes Container----------------------*/
+  .container{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: row;
+  }
+  #quote-box{
+    border: 2px solid #fff
+
+  }
+  .quote {
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.1;
+    position: relative;
+    margin: 20px;
+    } 
+
+  .source {
+    font-size: 1.25rem;;
+    letter-spacing: 0.05em;
+    line-height: 1.1;
+    text-align: right;
+    margin-right: 4em;
+  }
+  .source:before {
+    content: "—";
+  }
+  .citation {
+    font-style: italic;
+  }
+  .citation:before {
+    content: ", ";
+    font-style: normal;
+  }
+  .year:before {
+    content: ", ";
+    font-style: normal;
+  }
+  .category {
+    font-style: italic;
+  }
+  .category:before {
+    content: ", ";
+    font-style: normal;
+  }
+  
+  #loadQuote1 {
+    width: 12em;
+    display: flex;
+    left: 50%;
+    margin-left: 6em;
+    border-radius: 4px;
+    border: 2px solid #fff;
+    color: #fff;
+    background-color: #ff2e63;
+    padding: 15px 0;
+    transition: .5s ;
+  }
+  #loadQuote2 {
+    width: 12em;
+    display: flex;
+    left: 50%;
+    margin-left: 6em;
+    bottom: 150px;
+    border-radius: 4px;
+    border: 2px solid #fff;
+    color: #fff;
+    background-color: #00adb5;
+    padding: 15px 0;
+    transition: .5s ;
+  }
+  #loadQuote3 {
+    width: 12em;
+    display: flex;
+    left: 50%;
+    margin-left: 6em;
+    bottom: 150px;
+    border-radius: 4px;
+    border: 2px solid #fff;
+    color: #fff;
+    background-color: #f38181;
+    padding: 15px 0;
+    transition: .5s ;
+  }
+  #loadQuote4 {
+    width: 12em;
+    display: flex;
+    left: 50%;
+    margin-left: 6em;
+    bottom: 150px;
+    border-radius: 4px;
+    border: 2px solid #fff;
+    color: #fff;
+    background-color: #6639a6;
+    padding: 15px 0;
+    transition: .5s ;
+  }
+  #loadQuote:hover {
+    background-color: rgba(255,255,255,.25);
+  }
+  #loadQuote:focus {
+    outline: none;
+  }
+  
+  @media (max-width: 420px) {
+    .quote {
+      font-size: 2.5rem;
+    }
+    .quote:before, .quote:after {
+      font-size: 3rem;
+    }
+    .source {
+      font-size: 1rem;
+    }
+  }
+  
